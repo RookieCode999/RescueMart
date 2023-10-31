@@ -1,0 +1,30 @@
+/*GOOGLE FONT*/
+@import url('https://fonts.google.com/specimen/Poppins?preview.text=poppins&query=poppins')
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(252, 30%, 95%);
+  color: hsl(252, 30%, 17%);
+  overflow: hidden;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav{
+  width: 100%;
+  background-color: hsl(252, 30%, 100%);
+  padding: 0.7rem 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}

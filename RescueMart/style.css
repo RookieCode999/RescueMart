@@ -1,0 +1,365 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* navbar */
+  .logo{
+    width: 60%;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+  }
+  .logo a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  .navbar::before{
+    content: "";
+    position: fixed;
+    background-color: rgba(17, 17, 17, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+  }
+  .navbar ul{
+    display: flex;
+    list-style: none;
+  }
+  .navbar ul li{
+    font-size: 1.1rem;
+  }
+  .navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+  }
+  .navbar ul li a:hover{
+    background-color: #747070;
+    /*border-bottom: 2px solid black;*/
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+}
+
+/*Dropdown menu for PRODUCTS */
+.sub-menu-1{
+  display: none;
+}
+.navbar ul li:hover .sub-menu-1{
+ display: block;
+ position: absolute;
+ background: rgb(158, 146, 146);
+ background-color: transparent;
+}
+.navbar ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+}
+
+
+/* Style for the search input */
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    left: 50px;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+/* Style for the search button */
+.search-container .search-button {
+    background-color: #8f9397; /* Change to your desired button color */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+/* Hover effect for the button */
+.search-container .search-button:hover {
+    background-color: #0056b3; /* Change to your desired hover color */
+}
+  
+  /*Home Section*/
+  #home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 16, 16, 0.5);
+    color: white;
+    text-decoration: blink;
+    background: url('bg2.jpg');
+    background-size: cover;
+  }
+  #home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(59, 51, 51);
+    height: 700;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+  }
+  .heading{
+    color: white;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: translateY(-5px);
+  }
+  
+  p {
+    font-size: 18px; /* Set the font size for the paragraph */
+    color: #fff; /* Text color */
+    margin: 10px 0; /* Add margin for spacing */
+    transform: translateY(-30px);
+  }
+
+  
+  /* Gallery */
+  #gallery{
+    display: flex;
+    flex-direction: column;
+    background: url('bg.jpg');
+    background-size: cover;
+
+  }
+  #gallery h1{
+    margin: 60px;
+  }
+  .pics{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .pics img{
+    width: 330px;
+    height: 330px;
+    padding: 2.5px;
+    margin: 10px;
+    border-radius: 20px;
+    
+  }
+  .pics img:hover{
+    background-color: white;
+    cursor: pointer;
+
+  }
+  .image-container {
+    position: relative;
+    width: 360px;
+    text-align: center;
+  }
+  
+  .image-heading {
+    position: absolute;
+    bottom: 5;
+    left: 0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    text-decoration: underline;
+    cursor: pointer;
+    
+    /* Your existing styles for the heading at the bottom */
+}
+  /* ABOUT US */
+  #education{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+  }
+  .education h1{
+    margin: 60px;
+  }
+  .columns{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 20px;
+  }
+  .box{
+    height: 250px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.1) ;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .box h2{
+    color: rgb(184, 252, 57);
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  .box p{
+    color: white;
+    font-size: 1.3rem;
+  }
+  
+  /* Footer */
+  .footer-content{
+    padding: 20px;
+    text-align: center;
+    background: rgb(158, 146, 146);
+  }
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1rem;
+    margin: 10;
+    color: black;
+  }
+  
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    color: black;
+  }
+
+
+  .custom-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.custom-button:hover {
+    background-color: #333; /* Darker shade of the button color on hover */
+}
+
+.wrapper {
+  width: 420px;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 30px 40px;
+  border: 2px solid #fff; /* Add a border to the wrapper */
+  
+
+}
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+
+}
+.wrapper .input-box{
+    width: 100px;
+    height: 50px;
+    margin: 30px 0;
+
+
+}
+.input-box input {
+  width: 340%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+
+}
+.input-box input::placeholder{
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+
+}
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+  color: #fff;
+
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin: -15px 0 15px;
+
+
+}
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+
+
+}
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn{
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+
+.wrapper .register-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+  color: #fff;
+
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
